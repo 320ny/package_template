@@ -13,10 +13,6 @@
 .container {
   @include outer-container;
 }
-.index {
-  @include span-columns(10);
-}
-
 
 /*
 ----------------------------------------
