@@ -1,4 +1,5 @@
 ---
+# ensure Jekyll properly reads file.
 ---
 {% include normalize.min.css %}
 @import "bourbon/bourbon";
@@ -14,6 +15,7 @@
 @mixin respond-to($breakpoint) {
   @media only screen and (min-width: $breakpoint + px) { @content; }
 }
+$link-color: #0455BF;
 .container {
   @include outer-container;
   padding: 0 3%; 
@@ -33,7 +35,7 @@ a {
   img {
     vertical-align: middle;
   }
-  color: blue;
+  color: $link-color;
 }
 h1,
 h2,
@@ -139,7 +141,7 @@ header {
           }  
           /* RESPONSIVE */
           @include respond-to(768) {
-            color: blue;
+            color: $link-color;
             background: inherit;
             text-decoration: underline;
           }
